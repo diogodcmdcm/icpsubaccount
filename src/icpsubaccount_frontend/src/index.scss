@@ -20,18 +20,70 @@ form {
   align-items: baseline;
 }
 
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
+.instructions-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
+h1 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #333;
 }
 
-#greeting:empty {
-  display: none;
+.instructions-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instructions-list li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+strong {
+  color: #007bff;
+}
+
+.container_fields {
+  display: flex;          /* Exibe os elementos em linha */
+  align-items: center;    /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  margin: 0 auto;         /* Garante centralização horizontal na página */
+  padding: 10px;
+  gap: 10px;              /* Espaçamento entre os elementos */
+  width: fit-content;     /* Ajusta a largura ao conteúdo */
+  border-radius: 5px;     /* Bordas arredondadas */
+}
+
+.container {
+  border: 2px solid black;
+  margin: 0 auto;         /* Garante centralização horizontal na página */
+  padding: 10px;
+  width: 800px;
+  border-radius: 5px; /* Para bordas arredondadas, se desejar */
+  background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+.container label {
+  display: block; /* Garante que cada label fique em uma linha */
+  margin-bottom: 5px; /* Espaçamento entre as linhas */
+  font-size: 14px; /* Ajusta o tamanho da fonte */
+  color: #333; /* Cor do texto */
+}
+
+input#userId {
+  padding: 5px;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
 }
